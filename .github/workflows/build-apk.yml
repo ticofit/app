@@ -34,15 +34,13 @@ jobs:
           libavformat-dev \
           libavcodec-dev \
           zlib1g-dev \
-          libgstreamer1.0-dev \
-          gstreamer1.0-plugins-base \
-          gstreamer1.0-plugins-good \
-          libgstreamer-plugins-base1.0-dev \
           cmake \
           libffi-dev \
           libssl-dev \
           autoconf \
-          automake
+          automake \
+          libtool \
+          pkg-config
     
     - name: Upgrade pip and install Cython
       run: |
