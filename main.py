@@ -13,7 +13,11 @@ from kivy.uix.image import Image
 from kivy.uix.scrollview import ScrollView
 from kivy.uix.gridlayout import GridLayout
 from kivy.metrics import dp
-from kivy_garden.mapview import MapView, MapMarker, MapLayer, MarkerMapLayer
+from kivy_garden.mapview import MapView, MapMarker, MapLayer
+try:
+    from kivy_garden.mapview import MarkerMapLayer
+except ImportError:
+    MarkerMapLayer = MapLayer
 from plyer import gps, accelerometer, notification, vibrator, filechooser
 import json
 import datetime
@@ -26,6 +30,27 @@ import shutil
 import requests
 from io import BytesIO
 from functools import partial
+
+
+# Variables para controlar disponibilidad de sensores
+ACCELEROMETER_AVAILABLE = False
+GPS_AVAILABLE = False
+
+# Verificar disponibilidad de sensores
+try:
+    from plyer import accelerometer
+    accelerometer.enable()
+    ACCELEROMETER_AVAILABLE = True
+    accelerometer.disable()
+except:
+    print("Acelerómetro no disponible en este dispositivo")
+
+try:
+    from plyer import gps
+    GPS_AVAILABLE = True
+except:
+    print("GPS no disponible en este dispositivo")
+
 
 # Constantes de configuración
 MAX_DIAS_HISTORIAL = 30
@@ -46,11 +71,11 @@ class RouteMapLayer(MapLayer):
 
     def add_point(self, lat, lon):
         self.points.append((lat, lon))
-        self.trigger_reposition()
+        self.reposition()
 
     def clear_points(self):
         self.points = []
-        self.trigger_reposition()
+        self.reposition()
 
     def reposition(self):
         mapview = self.parent

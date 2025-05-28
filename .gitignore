@@ -1,39 +1,40 @@
-# Buildozer
-.buildozer/
-bin/
-build/
-
-# Python
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
-*.so
-.Python
-env/
-venv/
-ENV/
-buildozer_venv/
-buildozer_py310/
-buildozer_env_310/
 
 # Virtual environments
-*.egg-info/
-dist/
+venv/
+env/
+
+# Buildozer
+.buildozer/
+bin/
+
+# Cache
+cache/
+
+# Backups
+*.backup*
+*.bak
+
+# Temporary files
+*.tmp
+*_patch.py
+fix_*.py
+install_*.sh
+copy_*.sh
+debug_*.txt
+error_*.txt
 
 # IDE
 .idea/
 .vscode/
-*.swp
-*.swo
 
 # OS
 .DS_Store
 Thumbs.db
 
-# Logs
-*.log
-log.txt
-log.zip
-
-# Docker
-Dockerfile
+# Local data
+datos_salud/historial_*.json
+datos_salud/sesion_*.json

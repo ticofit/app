@@ -1,0 +1,10 @@
+kivy==2.2.1
+kivymd==1.1.1
+pillow
+plyer
+requests
+certifi
+urllib3
+idna
+charset-normalizer
+mapview
