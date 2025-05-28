@@ -1,0 +1,65 @@
+[[1;32mINFO[0m   ] [Logger      ] Record log in /home/felipe/.kivy/logs/kivy_25-05-28_55.txt
+[[1;32mINFO[0m   ] [Kivy        ] v2.2.1
+[[1;32mINFO[0m   ] [Kivy        ] Installed at "/home/felipe/ticofit-build/app/venv/lib/python3.10/site-packages/kivy/__init__.py"
+[[1;32mINFO[0m   ] [Python      ] v3.10.12 (main, May 26 2025, 15:40:15) [GCC 13.3.0]
+[[1;32mINFO[0m   ] [Python      ] Interpreter at "/home/felipe/ticofit-build/app/venv/bin/python"
+[[1;32mINFO[0m   ] [Logger      ] Purge log fired. Processing...
+[[1;32mINFO[0m   ] [Logger      ] Purge finished!
+[[1;32mINFO[0m   ] [Factory     ] 190 symbols loaded
+[[1;32mINFO[0m   ] [Image       ] Providers: img_tex, img_dds, img_sdl2, img_pil (img_ffpyplayer ignored)
+[[1;32mINFO[0m   ] [Audio       ] Providers: audio_sdl2 (audio_ffpyplayer ignored)
+[[1;32mINFO[0m   ] [Text        ] Provider: sdl2
+[[1;32mINFO[0m   ] [Window      ] Provider: sdl2
+[[1;32mINFO[0m   ] [GL          ] Using the "OpenGL" graphics system
+[[1;32mINFO[0m   ] [GL          ] Backend used <sdl2>
+[[1;32mINFO[0m   ] [GL          ] OpenGL version <b'4.1 (Compatibility Profile) Mesa 24.2.8-1ubuntu1~24.04.1'>
+[[1;32mINFO[0m   ] [GL          ] OpenGL vendor <b'Microsoft Corporation'>
+[[1;32mINFO[0m   ] [GL          ] OpenGL renderer <b'D3D12 (Intel(R) UHD Graphics 620)'>
+[[1;32mINFO[0m   ] [GL          ] OpenGL parsed version: 4, 1
+[[1;32mINFO[0m   ] [GL          ] Shading version <b'4.10'>
+[[1;32mINFO[0m   ] [GL          ] Texture max size <16384>
+[[1;32mINFO[0m   ] [GL          ] Texture max units <32>
+[[1;32mINFO[0m   ] [Window      ] auto add sdl2 input provider
+[[1;32mINFO[0m   ] [Window      ] virtual keyboard not allowed, single mode, not docked
+[[1;33mWARNING[0m] Deprecated property "<BooleanProperty name=allow_stretch>" of object "<kivy.uix.image.Image object at 0x7f5a54190120>" was accessed, it will be removed in a future version
+[[1;33mWARNING[0m] Deprecated property "<BooleanProperty name=keep_ratio>" of object "<kivy.uix.image.Image object at 0x7f5a54190120>" was accessed, it will be removed in a future version
+[[1;33mWARNING[0m] Deprecated property "<NumericProperty name=padding_y>" of object "<kivy.uix.label.Label object at 0x7f5a4ff8d700>" was accessed, it will be removed in a future version
+[[1;32mINFO[0m   ] [Clipboard   ] Provider: sdl2(['clipboard_xclip', 'clipboard_xsel', 'clipboard_dbusklipper', 'clipboard_gtk3'] ignored)
+[[1;31mCRITICAL[0m] [Cutbuffer   ] Unable to find any valuable Cutbuffer provider. Please enable debug logging (e.g. add -d if running from the command line, or change the log level in the config) and re-run your app to identify potential causes
+xclip - FileNotFoundError: [Errno 2] No such file or directory: 'xclip'
+  File "/home/felipe/ticofit-build/app/venv/lib/python3.10/site-packages/kivy/core/__init__.py", line 59, in core_select_lib
+    mod = importlib.__import__(name='{2}.{0}.{1}'.format(
+  File "<frozen importlib._bootstrap>", line 1129, in __import__
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/felipe/ticofit-build/app/venv/lib/python3.10/site-packages/kivy/core/clipboard/clipboard_xclip.py", line 17, in <module>
+    p = subprocess.Popen(['xclip', '-version'], stdout=subprocess.PIPE,
+  File "/home/felipe/.pyenv/versions/3.10.12/lib/python3.10/subprocess.py", line 971, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/felipe/.pyenv/versions/3.10.12/lib/python3.10/subprocess.py", line 1863, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+
+xsel - FileNotFoundError: [Errno 2] No such file or directory: 'xsel'
+  File "/home/felipe/ticofit-build/app/venv/lib/python3.10/site-packages/kivy/core/__init__.py", line 59, in core_select_lib
+    mod = importlib.__import__(name='{2}.{0}.{1}'.format(
+  File "<frozen importlib._bootstrap>", line 1129, in __import__
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/felipe/ticofit-build/app/venv/lib/python3.10/site-packages/kivy/core/clipboard/clipboard_xsel.py", line 16, in <module>
+    p = subprocess.Popen(['xsel'], stdout=subprocess.PIPE)
+  File "/home/felipe/.pyenv/versions/3.10.12/lib/python3.10/subprocess.py", line 971, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/felipe/.pyenv/versions/3.10.12/lib/python3.10/subprocess.py", line 1863, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+
+[[1;32mINFO[0m   ] [GL          ] NPOT texture support is available
+[[1;32mINFO[0m   ] [Base        ] Start application main loop
+[[1;32mINFO[0m   ] [Base        ] Leaving application in progress...

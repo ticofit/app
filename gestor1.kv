@@ -160,18 +160,29 @@
             Button:
                 text: 'Iniciar'
                 font_size: 18
+                opacity: 0.3 if getattr(root, 'rutina_completada', False) else 1
+                disabled: getattr(root, 'rutina_completada', False)
                 on_release: root.comenzar_rutina()
             
             Button:
                 text: 'Detener Alarma'
                 font_size: 18
-                disabled: not root.mostrar_boton_alarma
+                opacity: 0.3 if getattr(root, 'rutina_completada', False) else (1 if root.mostrar_boton_alarma else 0.5)
+                disabled: not root.mostrar_boton_alarma or getattr(root, 'rutina_completada', False)
                 on_release: root.detener_alarma()
             
             Button:
                 text: 'Siguiente'
                 font_size: 18
+                opacity: 0.3 if getattr(root, 'rutina_completada', False) else 1
+                disabled: getattr(root, 'rutina_completada', False)
                 on_release: root.siguiente()
+            
+            Button:
+                text: '🏠 Volver al Menú'
+                font_size: 16
+                background_color: (0, 0.8, 0, 1) if getattr(root, 'rutina_completada', False) else (0.2, 0.6, 1, 1)
+                on_release: app.root.current = 'bienvenida' 
 
 <Registro>:
     BoxLayout:

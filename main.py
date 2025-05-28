@@ -169,6 +169,45 @@ class Rutina(Screen):
         self.ejercicio_terminado = False
         self.cronometro_iniciado = False
         self.mostrar_boton_alarma = False
+        self.rutina_completada = False
+        self.rutina_completada = False
+        self.rutina_completada = False
+        self.rutina_completada = False
+        self.rutina_completada = False
+        self.rutina_completada = False
+        self.rutina_completada = False
+        self.rutina_completada = False
+        self.rutina_completada = False
+        self.rutina_completada = False
+        self.rutina_completada = False
+        self.rutina_completada = False
+        self.rutina_completada = False
+        self.rutina_completada = False
+        self.rutina_completada = False
+        self.rutina_completada = False
+        self.rutina_completada = False
+        self.rutina_completada = False
+        self.rutina_completada = False
+        self.rutina_completada = False
+        self.rutina_completada = False
+        self.rutina_completada = False
+        self.rutina_completada = False
+        self.rutina_completada = False
+        self.rutina_completada = False
+        self.rutina_completada = False
+        self.rutina_completada = False
+        self.rutina_completada = False
+        self.rutina_completada = False
+        self.rutina_completada = False
+        self.rutina_completada = False
+        self.rutina_completada = False
+        self.rutina_completada = False
+        self.rutina_completada = False
+        self.rutina_completada = False
+        self.rutina_completada = False
+        self.rutina_completada = False
+        self.rutina_completada = False
+        self.rutina_completada = False
         
         if self.indice_actual >= len(self.ejercicios_del_dia):
             self.ejercicio_actual = "¡Rutina completada!"
@@ -1467,3 +1506,20 @@ if __name__ == '__main__':
         GestorApp().run()
     except Exception as e:
         print(f"Error al iniciar la aplicación: {e}")
+
+
+# TICOFIT V2.0 - Mejoras
+class BackgroundService:
+    def start(self): print('✅ Servicio iniciado')
+    def stop(self): print('🔇 Servicio detenido')
+
+background_service = BackgroundService()
+
+
+# Importar mejoras v2.0
+exec(open('mejoras_v2.py').read())
+
+# Aplicar mejoras a la clase Rutina
+Rutina.mostrar_pantalla_completado = mostrar_pantalla_completado_mejorada
+Rutina.rutina_completada = BooleanProperty(False)
+
