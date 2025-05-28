@@ -23,12 +23,14 @@ jobs:
         pip install buildozer cython==0.29.36 virtualenv
         pip install kivy
     
-    - name: Build with Buildozer
+    - name: Force single architecture build
       run: |
-        yes | buildozer android debug
+        export BUILDOZER_ANDROID_ARCH=armeabi-v7a
+        yes | buildozer -v android debug
       
     - name: Upload APK
       uses: actions/upload-artifact@v4
       with:
         name: apk
         path: bin/*.apk
+        if-no-files-found: warn
