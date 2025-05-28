@@ -1,0 +1,438 @@
+#:kivy 2.0.0
+
+<Bienvenida>:
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 20
+        spacing: 10
+        
+        BoxLayout:
+            size_hint_y: 0.1
+            spacing: 10
+            
+            Label:
+                text: 'Bienvenido a tu App de Ejercicios'
+                font_size: 24
+                size_hint_x: 0.7
+                
+            Image:
+                source: 'Ticofit.png'
+                size_hint_x: 0.3
+                allow_stretch: True
+                keep_ratio: True
+        
+        Label:
+            text: root.frase_dia
+            font_size: 18
+            text_size: self.width, None
+            halign: 'center'
+            valign: 'middle'
+            size_hint_y: 0.3
+        
+        BoxLayout:
+            orientation: 'vertical'
+            size_hint_y: 0.5
+            spacing: 20
+            
+            Button:
+                text: 'Comenzar Rutina'
+                font_size: 20
+                on_release: app.root.current = 'rutina'
+            
+            Button:
+                text: 'Monitorear Actividad'
+                font_size: 20
+                on_release: app.root.current = 'monitoreo'
+            
+            Button:
+                text: 'Registro de Salud'
+                font_size: 20
+                on_release: app.root.current = 'registro'
+            
+            Button:
+                text: 'Ver Historial'
+                font_size: 20
+                on_release: app.root.current = 'historial'
+
+<Rutina>:
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 15
+        spacing: 10
+        
+        BoxLayout:
+            size_hint_y: 0.1
+            spacing: 10
+            
+            Button:
+                text: 'Volver'
+                size_hint_x: 0.3
+                on_release: app.root.current = 'bienvenida'
+            
+            Label:
+                text: 'Rutina Diaria'
+                font_size: 22
+                size_hint_x: 0.4
+            
+            Image:
+                source: 'Ticofit.png'
+                size_hint_x: 0.3
+                allow_stretch: True
+                keep_ratio: True
+        
+        Label:
+            text: root.ejercicio_actual
+            font_size: 26
+            size_hint_y: 0.15
+        
+        Label:
+            text: root.frase
+            font_size: 16
+            text_size: self.width, None
+            halign: 'center'
+            valign: 'middle'
+            size_hint_y: 0.1
+        
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint_y: 0.15
+            
+            Label:
+                text: 'Tiempo:'
+                size_hint_x: 0.3
+            
+            Label:
+                text: root.tiempo_formateado
+                font_size: 24
+                size_hint_x: 0.4
+            
+            Label:
+                text: 'Total: ' + root.tiempo_total_formateado
+                size_hint_x: 0.3
+        
+        ScrollView:
+            size_hint_y: 0.3
+            
+            BoxLayout:
+                orientation: 'vertical'
+                size_hint_y: None
+                height: self.minimum_height
+                spacing: 10
+                padding: 10
+                
+                Label:
+                    text: 'Pasos:'
+                    font_size: 18
+                    size_hint_y: None
+                    height: 30
+                
+                BoxLayout:
+                    orientation: 'vertical'
+                    size_hint_y: None
+                    height: self.minimum_height
+                    
+                    Label:
+                        text: '\n'.join(root.pasos)
+                        text_size: self.width, None
+                        size_hint_y: None
+                        height: self.texture_size[1]
+                
+                Label:
+                    text: 'Músculos trabajados: ' + root.musculos
+                    text_size: self.width, None
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    padding_y: 10
+                
+                Label:
+                    text: 'Cantidad recomendada: ' + root.cantidad_recomendada
+                    text_size: self.width, None
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    padding_y: 10
+        
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint_y: 0.2
+            padding: 10
+            spacing: 10
+            
+            Button:
+                text: 'Iniciar'
+                font_size: 18
+                on_release: root.comenzar_rutina()
+            
+            Button:
+                text: 'Detener Alarma'
+                font_size: 18
+                disabled: not root.mostrar_boton_alarma
+                on_release: root.detener_alarma()
+            
+            Button:
+                text: 'Siguiente'
+                font_size: 18
+                on_release: root.siguiente()
+
+<Registro>:
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 15
+        spacing: 10
+        
+        BoxLayout:
+            size_hint_y: 0.1
+            spacing: 10
+            
+            Button:
+                text: 'Volver'
+                size_hint_x: 0.3
+                on_release: app.root.current = 'bienvenida'
+            
+            Label:
+                text: 'Registro de Salud'
+                font_size: 22
+                size_hint_x: 0.4
+            
+            Image:
+                source: 'Ticofit.png'
+                size_hint_x: 0.3
+                allow_stretch: True
+                keep_ratio: True
+        
+        Label:
+            text: 'Fecha: ' + root.fecha_actual
+            size_hint_y: 0.1
+        
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint_y: 0.15
+            
+            Label:
+                text: 'Peso (kg):'
+                size_hint_x: 0.3
+            
+            TextInput:
+                text: str(root.peso)
+                input_filter: 'float'
+                multiline: False
+                size_hint_x: 0.4
+                on_text_validate: root.actualizar_peso(self.text)
+        
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint_y: 0.15
+            
+            Label:
+                text: 'Presión arterial:'
+                size_hint_x: 0.3
+            
+            TextInput:
+                text: str(root.presion_sistolica)
+                input_filter: 'int'
+                multiline: False
+                size_hint_x: 0.2
+                on_text_validate: root.actualizar_presion(self.text, str(root.presion_diastolica))
+            
+            Label:
+                text: '/'
+                size_hint_x: 0.1
+            
+            TextInput:
+                text: str(root.presion_diastolica)
+                input_filter: 'int'
+                multiline: False
+                size_hint_x: 0.2
+                on_text_validate: root.actualizar_presion(str(root.presion_sistolica), self.text)
+        
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint_y: 0.15
+            
+            Label:
+                text: 'Vasos de agua:'
+                size_hint_x: 0.3
+            
+            Button:
+                text: '-'
+                size_hint_x: 0.15
+                on_release: root.reducir_agua()
+            
+            Label:
+                text: str(root.agua)
+                size_hint_x: 0.1
+            
+            Button:
+                text: '+'
+                size_hint_x: 0.15
+                on_release: root.agregar_agua()
+        
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint_y: 0.15
+            
+            Label:
+                text: 'Horas de sueno:'
+                size_hint_x: 0.3
+            
+            Button:
+                text: '-'
+                size_hint_x: 0.15
+                on_release: root.reducir_sueno()
+            
+            Label:
+                text: str(root.sueno)
+                size_hint_x: 0.1
+            
+            Button:
+                text: '+'
+                size_hint_x: 0.15
+                on_release: root.agregar_sueno()
+        
+        Button:
+            text: 'Ver Historial'
+            size_hint_y: 0.1
+            on_release: root.mostrar_historial()
+
+<MonitoreoRuta>:
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 15
+        spacing: 10
+        
+        BoxLayout:
+            size_hint_y: 0.1
+            spacing: 10
+            
+            Button:
+                text: 'Volver'
+                size_hint_x: 0.3
+                on_release: app.root.current = 'bienvenida'
+            
+            Label:
+                text: 'Monitoreo de Actividad'
+                font_size: 22
+                size_hint_x: 0.4
+            
+            Image:
+                source: 'Ticofit.png'
+                size_hint_x: 0.3
+                allow_stretch: True
+                keep_ratio: True
+        
+        BoxLayout:
+            id: mapa_container
+            size_hint_y: 0.4
+        
+        GridLayout:
+            cols: 2
+            size_hint_y: 0.3
+            padding: 10
+            spacing: 5
+            
+            Label:
+                text: 'Tiempo:'
+                halign: 'right'
+            
+            Label:
+                text: root.formato_tiempo(root.tiempo_caminata)
+                font_size: 18
+            
+            Label:
+                text: 'Distancia:'
+                halign: 'right'
+            
+            Label:
+                text: f"{root.distancia_total/1000:.2f} km"
+                font_size: 18
+            
+            Label:
+                text: 'Velocidad:'
+                halign: 'right'
+            
+            Label:
+                text: f"{root.velocidad_actual:.1f} km/h"
+                font_size: 18
+            
+            Label:
+                text: 'Pasos:'
+                halign: 'right'
+            
+            Label:
+                text: str(root.pasos_contados)
+                font_size: 18
+            
+            Label:
+                text: 'Calorías:'
+                halign: 'right'
+            
+            Label:
+                text: f"{int(root.calorias_quemadas)} kcal"
+                font_size: 18
+        
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint_y: 0.2
+            padding: 10
+            spacing: 10
+            
+            Button:
+                text: 'Iniciar'
+                font_size: 18
+                disabled: root.grabando_ruta
+                on_release: root.iniciar_monitoreo()
+            
+            Button:
+                text: 'Detener'
+                font_size: 18
+                disabled: not root.grabando_ruta
+                on_release: root.detener_monitoreo()
+
+<Historial>:
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 15
+        spacing: 10
+        
+        BoxLayout:
+            size_hint_y: 0.1
+            spacing: 10
+            
+            Button:
+                text: 'Volver'
+                size_hint_x: 0.3
+                on_release: app.root.current = 'bienvenida'
+            
+            Label:
+                text: 'Historial de Actividad'
+                font_size: 22
+                size_hint_x: 0.4
+            
+            Image:
+                source: 'Ticofit.png'
+                size_hint_x: 0.3
+                allow_stretch: True
+                keep_ratio: True
+        
+        ScrollView:
+            size_hint_y: 0.9
+            
+            BoxLayout:
+                id: historial_container  # Añadido para resolver el problema anterior
+                orientation: 'vertical'
+                size_hint_y: None
+                height: self.minimum_height
+                spacing: 10
+                padding: 10
+                
+                Label:
+                    text: 'Sin registros' if not root.historial_datos else ''
+                    size_hint_y: None
+                    height: 40 if not root.historial_datos else 0
+                
+                GridLayout:
+                    cols: 1
+                    size_hint_y: None
+                    height: self.minimum_height
+                    spacing: 10
+                    # Este GridLayout se llenará programáticamente
+        

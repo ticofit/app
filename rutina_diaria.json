@@ -1,0 +1,380 @@
+[
+    {
+        "Día":"Lunes",
+        "Ejercicio":"Caminata",
+        "Cantidad recomendada":"45 minutos a ritmo moderado",
+        "Tiempo estimado":"45 min",
+        "Frase inspiracional":"Caminar es avanzar hacia una versión más fuerte de ti."
+    },
+    {
+        "Día":"Lunes",
+        "Ejercicio":"Calentamiento dinámico",
+        "Cantidad recomendada":"5 minutos",
+        "Tiempo estimado":"5 min",
+        "Frase inspiracional":"Activa tu energía, despierta tu fuego interior."
+    },
+    {
+        "Día":"Lunes",
+        "Ejercicio":"Air Squats",
+        "Cantidad recomendada":"3 series de 25 repeticiones",
+        "Tiempo estimado":"5 min",
+        "Frase inspiracional":"Cada sentadilla te acerca a la versión más fuerte de ti."
+    },
+    {
+        "Día":"Lunes",
+        "Ejercicio":"Push-ups",
+        "Cantidad recomendada":"3 series de 15 repeticiones",
+        "Tiempo estimado":"5 min",
+        "Frase inspiracional":"Empuja el suelo con tus manos y tus límites con tu mente."
+    },
+    {
+        "Día":"Lunes",
+        "Ejercicio":"Lunges",
+        "Cantidad recomendada":"3 series de 20 repeticiones (10 por pierna)",
+        "Tiempo estimado":"5 min",
+        "Frase inspiracional":"Paso a paso construyes piernas firmes y una voluntad inquebrantable."
+    },
+    {
+        "Día":"Lunes",
+        "Ejercicio":"Sit-ups",
+        "Cantidad recomendada":"3 series de 30 repeticiones",
+        "Tiempo estimado":"5 min",
+        "Frase inspiracional":"Tu núcleo es la base de todo poder: trabaja en él y dominarás el resto."
+    },
+    {
+        "Día":"Lunes",
+        "Ejercicio":"Plank",
+        "Cantidad recomendada":"3 series de 1 minuto",
+        "Tiempo estimado":"5 min",
+        "Frase inspiracional":"Mantente firme: a veces, la mayor fuerza está en la quietud."
+    },
+    {
+        "Día":"Lunes",
+        "Ejercicio":"Jumping Jacks",
+        "Cantidad recomendada":"5 series de 30 repeticiones",
+        "Tiempo estimado":"5 min",
+        "Frase inspiracional":"Abre los brazos al mundo, salta con el alma."
+    },
+    {
+        "Día":"Lunes",
+        "Ejercicio":"Burpees",
+        "Cantidad recomendada":"3 series de 10 repeticiones",
+        "Tiempo estimado":"5 min",
+        "Frase inspiracional":"Cada burpee es una caída y un renacer más fuerte."
+    },
+    {
+        "Día":"Lunes",
+        "Ejercicio":"Estiramiento final",
+        "Cantidad recomendada":"5 minutos guiados",
+        "Tiempo estimado":"5 min",
+        "Frase inspiracional":"Estirarte es agradecerle al cuerpo por su esfuerzo."
+    },
+    {
+        "Día":"Martes",
+        "Ejercicio":"Caminata",
+        "Cantidad recomendada":"45 minutos a ritmo moderado",
+        "Tiempo estimado":"45 min",
+        "Frase inspiracional":"Caminar es avanzar hacia una versión más fuerte de ti."
+    },
+    {
+        "Día":"Martes",
+        "Ejercicio":"Calentamiento dinámico",
+        "Cantidad recomendada":"5 minutos",
+        "Tiempo estimado":"5 min",
+        "Frase inspiracional":"Activa tu energía, despierta tu fuego interior."
+    },
+    {
+        "Día":"Martes",
+        "Ejercicio":"High Knees",
+        "Cantidad recomendada":"5 series de 30 segundos",
+        "Tiempo estimado":"5 min",
+        "Frase inspiracional":"Corre en el lugar como si estuvieras huyendo de tus excusas."
+    },
+    {
+        "Día":"Martes",
+        "Ejercicio":"Sit-ups",
+        "Cantidad recomendada":"5 series de 30 repeticiones",
+        "Tiempo estimado":"5 min",
+        "Frase inspiracional":"Tu núcleo es la base de todo poder: trabaja en él y dominarás el resto."
+    },
+    {
+        "Día":"Martes",
+        "Ejercicio":"Plank",
+        "Cantidad recomendada":"5 series de 1 minuto",
+        "Tiempo estimado":"5 min",
+        "Frase inspiracional":"Mantente firme: a veces, la mayor fuerza está en la quietud."
+    },
+    {
+        "Día":"Martes",
+        "Ejercicio":"Jumping Jacks",
+        "Cantidad recomendada":"5 series de 30 repeticiones",
+        "Tiempo estimado":"5 min",
+        "Frase inspiracional":"Abre los brazos al mundo, salta con el alma."
+    },
+    {
+        "Día":"Martes",
+        "Ejercicio":"Estiramiento final",
+        "Cantidad recomendada":"5 minutos guiados",
+        "Tiempo estimado":"5 min",
+        "Frase inspiracional":"Estirarte es agradecerle al cuerpo por su esfuerzo."
+    },
+    {
+        "Día":"Miércoles",
+        "Ejercicio":"Caminata",
+        "Cantidad recomendada":"45 minutos a ritmo moderado",
+        "Tiempo estimado":"45 min",
+        "Frase inspiracional":"Caminar es avanzar hacia una versión más fuerte de ti."
+    },
+    {
+        "Día":"Miércoles",
+        "Ejercicio":"Calentamiento dinámico",
+        "Cantidad recomendada":"5 minutos",
+        "Tiempo estimado":"5 min",
+        "Frase inspiracional":"Activa tu energía, despierta tu fuego interior."
+    },
+    {
+        "Día":"Miércoles",
+        "Ejercicio":"Air Squats",
+        "Cantidad recomendada":"5 series de 25 repeticiones",
+        "Tiempo estimado":"5 min",
+        "Frase inspiracional":"Cada sentadilla te acerca a la versión más fuerte de ti."
+    },
+    {
+        "Día":"Miércoles",
+        "Ejercicio":"Lunges",
+        "Cantidad recomendada":"5 series de 20 repeticiones (10 por pierna)",
+        "Tiempo estimado":"5 min",
+        "Frase inspiracional":"Paso a paso construyes piernas firmes y una voluntad inquebrantable."
+    },
+    {
+        "Día":"Miércoles",
+        "Ejercicio":"High Knees",
+        "Cantidad recomendada":"5 series de 30 segundos",
+        "Tiempo estimado":"5 min",
+        "Frase inspiracional":"Corre en el lugar como si estuvieras huyendo de tus excusas."
+    },
+    {
+        "Día":"Miércoles",
+        "Ejercicio":"Estiramiento final",
+        "Cantidad recomendada":"5 minutos guiados",
+        "Tiempo estimado":"5 min",
+        "Frase inspiracional":"Estirarte es agradecerle al cuerpo por su esfuerzo."
+    },
+    {
+        "Día":"Jueves",
+        "Ejercicio":"Caminata",
+        "Cantidad recomendada":"45 minutos a ritmo moderado",
+        "Tiempo estimado":"45 min",
+        "Frase inspiracional":"Caminar es avanzar hacia una versión más fuerte de ti."
+    },
+    {
+        "Día":"Jueves",
+        "Ejercicio":"Calentamiento dinámico",
+        "Cantidad recomendada":"5 minutos",
+        "Tiempo estimado":"5 min",
+        "Frase inspiracional":"Activa tu energía, despierta tu fuego interior."
+    },
+    {
+        "Día":"Jueves",
+        "Ejercicio":"Burpees",
+        "Cantidad recomendada":"3 series de 10 repeticiones",
+        "Tiempo estimado":"5 min",
+        "Frase inspiracional":"Cada burpee es una caída y un renacer más fuerte."
+    },
+    {
+        "Día":"Jueves",
+        "Ejercicio":"Jumping Jacks",
+        "Cantidad recomendada":"5 series de 30 repeticiones",
+        "Tiempo estimado":"5 min",
+        "Frase inspiracional":"Abre los brazos al mundo, salta con el alma."
+    },
+    {
+        "Día":"Jueves",
+        "Ejercicio":"Push-ups",
+        "Cantidad recomendada":"5 series de 15 repeticiones",
+        "Tiempo estimado":"5 min",
+        "Frase inspiracional":"Empuja el suelo con tus manos y tus límites con tu mente."
+    },
+    {
+        "Día":"Jueves",
+        "Ejercicio":"Sit-ups",
+        "Cantidad recomendada":"5 series de 30 repeticiones",
+        "Tiempo estimado":"5 min",
+        "Frase inspiracional":"Tu núcleo es la base de todo poder: trabaja en él y dominarás el resto."
+    },
+    {
+        "Día":"Jueves",
+        "Ejercicio":"Lunges",
+        "Cantidad recomendada":"5 series de 20 repeticiones (10 por pierna)",
+        "Tiempo estimado":"5 min",
+        "Frase inspiracional":"Paso a paso construyes piernas firmes y una voluntad inquebrantable."
+    },
+    {
+        "Día":"Jueves",
+        "Ejercicio":"High Knees",
+        "Cantidad recomendada":"5 series de 30 segundos",
+        "Tiempo estimado":"5 min",
+        "Frase inspiracional":"Corre en el lugar como si estuvieras huyendo de tus excusas."
+    },
+    {
+        "Día":"Jueves",
+        "Ejercicio":"Plank",
+        "Cantidad recomendada":"5 series de 1 minuto",
+        "Tiempo estimado":"5 min",
+        "Frase inspiracional":"Mantente firme: a veces, la mayor fuerza está en la quietud."
+    },
+    {
+        "Día":"Jueves",
+        "Ejercicio":"Estiramiento final",
+        "Cantidad recomendada":"5 minutos guiados",
+        "Tiempo estimado":"5 min",
+        "Frase inspiracional":"Estirarte es agradecerle al cuerpo por su esfuerzo."
+    },
+    {
+        "Día":"Viernes",
+        "Ejercicio":"Caminata",
+        "Cantidad recomendada":"45 minutos a ritmo moderado",
+        "Tiempo estimado":"45 min",
+        "Frase inspiracional":"Caminar es avanzar hacia una versión más fuerte de ti."
+    },
+    {
+        "Día":"Viernes",
+        "Ejercicio":"Calentamiento dinámico",
+        "Cantidad recomendada":"5 minutos",
+        "Tiempo estimado":"5 min",
+        "Frase inspiracional":"Activa tu energía, despierta tu fuego interior."
+    },
+    {
+        "Día":"Viernes",
+        "Ejercicio":"Sit-ups",
+        "Cantidad recomendada":"5 series de 30 repeticiones",
+        "Tiempo estimado":"5 min",
+        "Frase inspiracional":"Tu núcleo es la base de todo poder: trabaja en él y dominarás el resto."
+    },
+    {
+        "Día":"Viernes",
+        "Ejercicio":"Plank",
+        "Cantidad recomendada":"5 series de 1 minuto",
+        "Tiempo estimado":"5 min",
+        "Frase inspiracional":"Mantente firme: a veces, la mayor fuerza está en la quietud."
+    },
+    {
+        "Día":"Viernes",
+        "Ejercicio":"Jumping Jacks",
+        "Cantidad recomendada":"5 series de 30 repeticiones",
+        "Tiempo estimado":"5 min",
+        "Frase inspiracional":"Abre los brazos al mundo, salta con el alma."
+    },
+    {
+        "Día":"Viernes",
+        "Ejercicio":"Estiramiento final",
+        "Cantidad recomendada":"5 minutos guiados",
+        "Tiempo estimado":"5 min",
+        "Frase inspiracional":"Estirarte es agradecerle al cuerpo por su esfuerzo."
+    },
+    {
+        "Día":"Sábado",
+        "Ejercicio":"Caminata",
+        "Cantidad recomendada":"45 minutos a ritmo moderado",
+        "Tiempo estimado":"45 min",
+        "Frase inspiracional":"Caminar es avanzar hacia una versión más fuerte de ti."
+    },
+    {
+        "Día":"Sábado",
+        "Ejercicio":"Calentamiento dinámico",
+        "Cantidad recomendada":"5 minutos",
+        "Tiempo estimado":"5 min",
+        "Frase inspiracional":"Activa tu energía, despierta tu fuego interior."
+    },
+    {
+        "Día":"Sábado",
+        "Ejercicio":"Air Squats",
+        "Cantidad recomendada":"5 series de 25 repeticiones",
+        "Tiempo estimado":"5 min",
+        "Frase inspiracional":"Cada sentadilla te acerca a la versión más fuerte de ti."
+    },
+    {
+        "Día":"Sábado",
+        "Ejercicio":"Push-ups",
+        "Cantidad recomendada":"5 series de 15 repeticiones",
+        "Tiempo estimado":"5 min",
+        "Frase inspiracional":"Empuja el suelo con tus manos y tus límites con tu mente."
+    },
+    {
+        "Día":"Sábado",
+        "Ejercicio":"Jumping Jacks",
+        "Cantidad recomendada":"5 series de 30 repeticiones",
+        "Tiempo estimado":"5 min",
+        "Frase inspiracional":"Abre los brazos al mundo, salta con el alma."
+    },
+    {
+        "Día":"Sábado",
+        "Ejercicio":"Burpees",
+        "Cantidad recomendada":"5 series de 10 repeticiones",
+        "Tiempo estimado":"5 min",
+        "Frase inspiracional":"Cada burpee es una caída y un renacer más fuerte."
+    },
+    {
+        "Día":"Sábado",
+        "Ejercicio":"Sit-ups",
+        "Cantidad recomendada":"5 series de 30 repeticiones",
+        "Tiempo estimado":"5 min",
+        "Frase inspiracional":"Tu núcleo es la base de todo poder: trabaja en él y dominarás el resto."
+    },
+    {
+        "Día":"Sábado",
+        "Ejercicio":"Plank",
+        "Cantidad recomendada":"5 series de 1 minuto",
+        "Tiempo estimado":"5 min",
+        "Frase inspiracional":"Mantente firme: a veces, la mayor fuerza está en la quietud."
+    },
+    {
+        "Día":"Sábado",
+        "Ejercicio":"Estiramiento final",
+        "Cantidad recomendada":"5 minutos guiados",
+        "Tiempo estimado":"5 min",
+        "Frase inspiracional":"Estirarte es agradecerle al cuerpo por su esfuerzo."
+    },
+    {
+        "Día":"Domingo",
+        "Ejercicio":"Caminata",
+        "Cantidad recomendada":"45 minutos a ritmo moderado",
+        "Tiempo estimado":"45 min",
+        "Frase inspiracional":"Caminar es avanzar hacia una versión más fuerte de ti."
+    },
+    {
+        "Día":"Domingo",
+        "Ejercicio":"Calentamiento dinámico",
+        "Cantidad recomendada":"5 minutos",
+        "Tiempo estimado":"5 min",
+        "Frase inspiracional":"Activa tu energía, despierta tu fuego interior."
+    },
+    {
+        "Día":"Domingo",
+        "Ejercicio":"Jumping Jacks",
+        "Cantidad recomendada":"5 series de 30 repeticiones",
+        "Tiempo estimado":"5 min",
+        "Frase inspiracional":"Abre los brazos al mundo, salta con el alma."
+    },
+    {
+        "Día":"Domingo",
+        "Ejercicio":"Air Squats",
+        "Cantidad recomendada":"5 series de 25 repeticiones",
+        "Tiempo estimado":"5 min",
+        "Frase inspiracional":"Cada sentadilla te acerca a la versión más fuerte de ti."
+    },
+    {
+        "Día":"Domingo",
+        "Ejercicio":"Estiramientos y respiración",
+        "Cantidad recomendada":"10 minutos suaves + 5 respiraciones",
+        "Tiempo estimado":"10 min",
+        "Frase inspiracional":"Respira y honra a tu cuerpo con suavidad."
+    },
+    {
+        "Día":"Domingo",
+        "Ejercicio":"Estiramiento final",
+        "Cantidad recomendada":"5 minutos guiados",
+        "Tiempo estimado":"5 min",
+        "Frase inspiracional":"Estirarte es agradecerle al cuerpo por su esfuerzo."
+    }
+]

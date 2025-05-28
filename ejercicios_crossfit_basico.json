@@ -1,0 +1,97 @@
+[
+    {
+        "Ejercicio": "Air Squats",
+        "Frase inspiracional": "Cada sentadilla te acerca a la versión más fuerte de ti.",
+        "Pasos clave": [
+            "Párate con los pies al ancho de los hombros.",
+            "Extiende los brazos al frente o déjalos en la cintura.",
+            "Empuja las caderas hacia atrás (como si fueras a sentarte en una silla invisible).",
+            "Baja hasta que tus muslos estén paralelos al suelo.",
+            "Mantén el pecho arriba, espalda recta.",
+            "Empuja con los talones para volver a subir."
+        ],
+        "Músculos trabajados": "Glúteos, cuádriceps, isquiotibiales, core, pantorrillas"
+    },
+    {
+        "Ejercicio": "Push-ups",
+        "Frase inspiracional": "Empuja el suelo con tus manos y tus límites con tu mente.",
+        "Pasos clave": [
+            "Apoya las manos en el suelo, alineadas con el pecho.",
+            "Estira el cuerpo como una tabla (pies juntos, abdomen contraído).",
+            "Baja el pecho hacia el suelo doblando los codos.",
+            "Que el pecho casi toque el suelo.",
+            "Empuja fuerte para volver arriba."
+        ],
+        "Músculos trabajados": "Pectorales, tríceps, deltoides, core"
+    },
+    {
+        "Ejercicio": "Sit-ups",
+        "Frase inspiracional": "Tu núcleo es la base de todo poder: trabaja en él y dominarás el resto.",
+        "Pasos clave": [
+            "Acuéstate boca arriba con las rodillas dobladas.",
+            "Planta los pies en el suelo, separados al ancho de caderas.",
+            "Coloca las manos cruzadas sobre el pecho o detrás de la cabeza (sin jalar).",
+            "Usa tu abdomen para levantar el torso hacia las rodillas.",
+            "Baja con control."
+        ],
+        "Músculos trabajados": "Recto abdominal, oblicuos, psoas iliaco"
+    },
+    {
+        "Ejercicio": "Lunges",
+        "Frase inspiracional": "Paso a paso construyes piernas firmes y una voluntad inquebrantable.",
+        "Pasos clave": [
+            "Párate derecho, manos en la cintura o a los lados.",
+            "Da un paso largo hacia adelante.",
+            "Flexiona ambas rodillas: la delantera a 90°, la trasera casi toca el suelo.",
+            "Empuja con el pie delantero para volver al centro.",
+            "Alterna piernas."
+        ],
+        "Músculos trabajados": "Glúteos, cuádriceps, isquiotibiales, pantorrillas, core"
+    },
+    {
+        "Ejercicio": "Burpees",
+        "Frase inspiracional": "Cada burpee es una caída y un renacer más fuerte.",
+        "Pasos clave": [
+            "Desde parado, baja en cuclillas y apoya las manos en el suelo.",
+            "Lanza los pies hacia atrás (como si hicieras una plancha).",
+            "Toca el pecho al suelo.",
+            "Regresa los pies al frente con un salto.",
+            "Salta al cielo con las manos arriba."
+        ],
+        "Músculos trabajados": "Todo el cuerpo: pecho, hombros, tríceps, core, glúteos, piernas, espalda"
+    },
+    {
+        "Ejercicio": "Plank",
+        "Frase inspiracional": "Mantente firme: a veces, la mayor fuerza está en la quietud.",
+        "Pasos clave": [
+            "Apoya los antebrazos en el suelo (codos debajo de los hombros).",
+            "Extiende las piernas, solo los dedos de los pies tocan el suelo.",
+            "Activa glúteos y abdomen.",
+            "Mantén el cuerpo alineado como tabla.",
+            "Sostén por 30–60 segundos… o hasta que el alma tiemble."
+        ],
+        "Músculos trabajados": "Abdomen, glúteos, espalda baja, hombros, cuello"
+    },
+    {
+        "Ejercicio": "High Knees",
+        "Frase inspiracional": "Corre en el lugar como si estuvieras huyendo de tus excusas.",
+        "Pasos clave": [
+            "Párate con la espalda recta.",
+            "Corre en el lugar, subiendo las rodillas a la altura del ombligo.",
+            "Acompaña con los brazos, como en una carrera.",
+            "Mantén el ritmo durante 30 segundos."
+        ],
+        "Músculos trabajados": "Cuádriceps, glúteos, abdomen, pantorrillas, cardiovascular"
+    },
+    {
+        "Ejercicio": "Jumping Jacks",
+        "Frase inspiracional": "Abre los brazos al mundo, salta con el alma.",
+        "Pasos clave": [
+            "Comienza de pie, con los brazos a los lados.",
+            "Salta y abre las piernas al mismo tiempo que subes los brazos por encima de la cabeza.",
+            "Vuelve a la posición inicial.",
+            "Repite con ritmo ligero."
+        ],
+        "Músculos trabajados": "Hombros, gemelos, cuádriceps, glúteos, core, corazón"
+    }
+]
